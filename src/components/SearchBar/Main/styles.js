@@ -19,11 +19,8 @@ export const SearchBar = styled.div`
   border-radius: 4px;
 `;
 
-export const PopUpTriggerButton = styled.button`
-  cursor: text;
-  border: none;
-  padding: 8px;
-  font-size: 16px;
+export const ButtonsContainer = styled.div`
+  position: relative;
 `;
 
 export const SubmitButton = styled.button`

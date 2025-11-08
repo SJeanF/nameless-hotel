@@ -5,8 +5,10 @@ export const Container = styled.div`
   left: 0;
   top: 56px;
   background-color: gray;
-  max-width: 512px;
-  width: 100%;
+  width: 512px;
+  height: 256px;
+  display: flex;
+  flex-direction: column;
   visibility: ${(props) => (props.$active ? "visible" : "hidden")};
   opacity: ${(props) => (props.$active ? "1" : "0")};
   padding: 8px;
@@ -19,8 +21,7 @@ export const Tittle = styled.h4`
 
 export const SuggestionsList = styled.ul`
   width: 100%;
-  height: calc(100% - 51px);
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 
   :last-child {

@@ -10,6 +10,7 @@ const StateSuggestions = ({ active }) => {
         <SuggestionItem />
         <SuggestionItem />
         <SuggestionItem />
+        <SuggestionItem />
       </S.SuggestionsList>
     </S.Container>
   );

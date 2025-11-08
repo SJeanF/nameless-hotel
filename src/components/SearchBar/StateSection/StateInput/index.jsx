@@ -14,7 +14,7 @@ const StateInput = () => {
   };
 
   return (
-    <S.Container>
+    <>
       <S.StateInput
         $active={inputActive}
         placeholder="Para onde você vai?"
@@ -22,7 +22,7 @@ const StateInput = () => {
         onBlur={BlurInput}
       />
       <StateSuggestions active={inputActive} />
-    </S.Container>
+    </>
   );
 };
 
