@@ -1,5 +1,5 @@
 import * as S from "./styles";
-import StateSelector from "../StateSelector";
+import StateSelector from "../StateSection/StateInput";
 
 const SearchBar = () => {
   return (

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import * as S from "./styles";
-import StateSuggestions from "../../StatesSuggestions";
+import StateSuggestions from "../StatesSuggestions";
 
-const StateSelector = () => {
-  const [inputActive, setInputActive] = useState(true);
+const StateInput = () => {
+  const [inputActive, setInputActive] = useState(false);
 
   const handleInput = () => {
     setInputActive(true);
@@ -26,4 +26,4 @@ const StateSelector = () => {
   );
 };
 
-export default StateSelector;
+export default StateInput;

@@ -1,4 +1,4 @@
-import SuggestionItem from "../components/SuggestionItem";
+import SuggestionItem from "../SuggestionItem";
 import * as S from "./styles";
 
 const StateSuggestions = ({ active }) => {
