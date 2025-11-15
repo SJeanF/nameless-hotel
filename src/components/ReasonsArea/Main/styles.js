@@ -6,7 +6,9 @@ export const Container = styled.div`
   margin-top: 128px;
 `;
 
-export const Tittle = styled.h3``;
+export const Tittle = styled.h3`
+  font-size: 24px;
+`;
 
 export const ReasonsList = styled.ul`
   display: grid;
