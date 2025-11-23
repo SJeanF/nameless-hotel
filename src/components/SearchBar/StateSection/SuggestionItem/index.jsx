@@ -3,14 +3,14 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 import * as S from "./styles";
 
-const SuggestionItem = () => {
+const SuggestionItem = ({ city }) => {
   return (
     <S.Container>
       <S.LocationIcon>
         <FontAwesomeIcon icon={faLocationDot} />
       </S.LocationIcon>
       <S.TextsContainer>
-        <S.StateName>Aracaju</S.StateName>
+        <S.StateName>{city}</S.StateName>
         <S.StateContry>Brazil</S.StateContry>
       </S.TextsContainer>
     </S.Container>

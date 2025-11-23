@@ -1,16 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as S from "./styles";
-import { faThumbsUp } from "@fortawesome/free-regular-svg-icons";
 
-const ReasonItem = () => {
+const ReasonItem = ({ icon, title, description }) => {
   return (
     <S.Container>
       <S.Icon>
-        <FontAwesomeIcon icon={faThumbsUp} />
-        <S.Tittle>Facilidade para reservar e cancelar</S.Tittle>
-        <S.Description>
-          Escolha sua estadia com flexibilidade e pague da forma que preferir.
-        </S.Description>
+        <FontAwesomeIcon icon={icon} />
+        <S.Tittle>{title}</S.Tittle>
+        <S.Description>{description}</S.Description>
       </S.Icon>
     </S.Container>
   );

@@ -1,21 +1,29 @@
 import * as S from "./styles";
 
 const DiferentialCheckContainer = ({ active }) => {
+  const diferentials = [
+    "Café da manhã incluso",
+    "Wi-Fi de alta velocidade",
+    "Ar condicionado",
+    "Piscina",
+    "Estacionamento gratuito",
+    "Serviço de quarto",
+    "Academia",
+  ];
+
   return (
     <S.Container $active={active}>
       <S.Tittle>Opicionais</S.Tittle>
       <S.OptionsList>
-        {Array.from({ length: 7 }, (_, index) => index + 1).map((curr) => (
+        {diferentials.map((curr) => (
           <S.Option key={curr}>
             <S.OptionCheckBox
-              id="diferential"
-              name="diferential"
-              value="Café da manhã incluso"
+              id={`diferentials-${curr}`}
+              name={`diferentials-${curr}`}
+              value={`diferentials-${curr}`}
               type="checkbox"
             />
-            <S.OptionName htmlFor="diferential">
-              Café da manhã incluso
-            </S.OptionName>
+            <S.OptionName htmlFor="diferential">{curr}</S.OptionName>
           </S.Option>
         ))}
       </S.OptionsList>

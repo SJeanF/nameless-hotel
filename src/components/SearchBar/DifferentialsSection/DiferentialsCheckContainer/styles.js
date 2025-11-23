@@ -6,12 +6,13 @@ export const Container = styled.div`
   top: 56px;
   display: ${(props) => (props.$active ? "flex" : "none")};
   flex-direction: column;
-  background-color: gray;
+  background-color: white;
   width: 256px;
   height: 100vh;
   max-height: 256px;
   padding: 8px;
   border-radius: 4px;
+  box-shadow: 1px 2px 16px black;
 `;
 
 export const Tittle = styled.h4`
@@ -27,7 +28,7 @@ export const OptionsList = styled.ul`
 `;
 
 export const Option = styled.li`
-  padding: 12px 0;
+  padding: 4px 0;
   list-style: none;
 `;
 

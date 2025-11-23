@@ -1,13 +1,8 @@
 import styled from "styled-components";
+import { SectionComumContainer } from "../../ComumStyledComponents/styles";
 
-export const Container = styled.div`
-  max-width: 1024px;
-  margin: auto;
+export const Container = styled(SectionComumContainer)`
   margin-top: 128px;
-`;
-
-export const Tittle = styled.h3`
-  font-size: 24px;
 `;
 
 export const ReasonsList = styled.ul`

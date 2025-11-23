@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.li`
   list-style: none;
-  background-color: lightgray;
+  background-color: white;
   padding: 16px;
   border: 1px solid gray;
   border-radius: 8px;
+  box-shadow: 0 2px 8px black;
 `;
 
 export const Icon = styled.span`

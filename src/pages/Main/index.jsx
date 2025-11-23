@@ -4,6 +4,8 @@ import HeroBanner from "../../components/HeroBanner";
 import SearchBar from "../../components/SearchBar/Main";
 import ReasonsArea from "../../components/ReasonsArea/Main";
 import MostWantedArea from "../../components/MostWantedArea/Main";
+import AccomodationTypeArea from "../../components/AccomodationTypeArea/Main";
+import Footer from "../../components/Footer";
 
 const MainPage = () => {
   return (
@@ -15,6 +17,8 @@ const MainPage = () => {
       </S.TopContainer>
       <ReasonsArea />
       <MostWantedArea />
+      <AccomodationTypeArea />
+      <Footer />
     </>
   );
 };

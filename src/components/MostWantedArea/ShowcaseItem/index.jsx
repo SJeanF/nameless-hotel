@@ -1,18 +1,17 @@
 import * as S from "./styles";
 
-const ShowcaseItem = ({ type, gridArea }) => {
+const ShowcaseItem = ({ name, image, gridArea }) => {
   return (
     <S.Container
       $gridArea={gridArea}
-      $type={type}
       $src={
-        type
-          ? "https://cf.bstatic.com/xdata/images/city/600x600/653646.jpg?k=0a8eb3999748f5b12b29f6bd5492a12b7f15a37535e572ea91403098d1588d38&o="
-          : "https://cf.bstatic.com/xdata/images/city/600x600/653459.jpg?k=57c5c21e650b8e0888c5906143c2655c412a2e64796337d87a687c68daabed2d&o="
+        image
+          ? image
+          : "https://www.faxaju.com.br/wp-content/uploads/2024/05/6187a8bc-7d67-49c9-9f17-2b4d5db4b53b.jpg"
       }
     >
       <S.CityName>
-        Riachão do Dantas
+        {name}
         <S.StateIcon src="https://upload.wikimedia.org/wikipedia/commons/b/be/Bandeira_de_Sergipe.svg" />
       </S.CityName>
     </S.Container>

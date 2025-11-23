@@ -10,6 +10,7 @@ export const Container = styled.li`
   padding-bottom: 8px;
   list-style: none;
   position: relative;
+  cursor: pointer;
 
   &::after {
     content: "";
