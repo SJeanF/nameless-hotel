@@ -34,7 +34,7 @@ const ReasonsArea = () => {
 
   return (
     <S.Container>
-      <SectionTitle>Por que usar a Nameless?</SectionTitle>
+      <SectionTitle>Por que usar a Alpha imóveis?</SectionTitle>
       <S.ReasonsList>
         {namelessDiferentials.map((curr) => (
           <ReasonItem
