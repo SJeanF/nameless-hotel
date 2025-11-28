@@ -11,7 +11,7 @@ const SuggestionItem = ({ city }) => {
       </S.LocationIcon>
       <S.TextsContainer>
         <S.StateName>{city}</S.StateName>
-        <S.StateContry>Brazil</S.StateContry>
+        <S.StateContry>Riachão do Dantas</S.StateContry>
       </S.TextsContainer>
     </S.Container>
   );
